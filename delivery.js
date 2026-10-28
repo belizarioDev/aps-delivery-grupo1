@@ -14,3 +14,7 @@ function forcaSenha(senha) {
   const tipos = regras.filter((regra) => regra.test(senha)).length;
   return tipos >= 3 ? 'forte' : 'media';
 }
+
+function podeLogar(usuario) {
+  return usuario.status === 'ativo' && usuario.falhas < 3;
+}
