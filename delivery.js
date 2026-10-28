@@ -5,3 +5,12 @@ function autenticar(usuarios, email, senha) {
   }
   return usuario.senha === senha && usuario.ativo === true;
 }
+
+function forcaSenha(senha) {
+  if (senha.length < 8) {
+    return 'fraca';
+  }
+  const regras = [/[a-z]/, /[A-Z]/, /[0-9]/, /[^a-zA-Z0-9]/];
+  const tipos = regras.filter((regra) => regra.test(senha)).length;
+  return tipos >= 3 ? 'forte' : 'media';
+}
