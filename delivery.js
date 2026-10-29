@@ -43,3 +43,11 @@ function aplicarCupom(valor, cupom) {
   }
   return Math.round(valor * (1 - desconto) * 100) / 100;
 }
+
+module.exports = {
+  autenticar,
+  forcaSenha,
+  podeLogar,
+  calcularFrete,
+  aplicarCupom
+};
