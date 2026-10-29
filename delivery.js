@@ -28,3 +28,18 @@ function calcularFrete(distanciaKm) {
   }
   return 5 + (distanciaKm - 3) * 1.5;
 }
+
+function aplicarCupom(valor, cupom) {
+  if (!cupom) {
+    return valor;
+  }
+  let desconto;
+  if (cupom === 'PRIMEIRA10') {
+    desconto = 0.1;
+  } else if (cupom === 'VIP20') {
+    desconto = 0.2;
+  } else {
+    throw new Error('Cupom inválido');
+  }
+  return Math.round(valor * (1 - desconto) * 100) / 100;
+}
