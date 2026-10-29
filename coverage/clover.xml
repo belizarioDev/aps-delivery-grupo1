@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1793232619645" clover="3.2.0">
-  <project timestamp="1793232619645" name="All files">
+<coverage generated="1793232689252" clover="3.2.0">
+  <project timestamp="1793232689252" name="All files">
     <metrics statements="24" coveredstatements="24" conditionals="20" coveredconditionals="20" methods="7" coveredmethods="7" elements="51" coveredelements="51" complexity="0" loc="24" ncloc="24" packages="1" files="1" classes="1"/>
     <file name="delivery.js" path="C:\Users\beliz\Music\aps-delivery-grupo1\delivery.js">
       <metrics statements="24" coveredstatements="24" conditionals="20" coveredconditionals="20" methods="7" coveredmethods="7"/>
