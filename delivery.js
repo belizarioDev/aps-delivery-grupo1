@@ -18,3 +18,13 @@ function forcaSenha(senha) {
 function podeLogar(usuario) {
   return usuario.status === 'ativo' && usuario.falhas < 3;
 }
+
+function calcularFrete(distanciaKm) {
+  if (distanciaKm <= 0) {
+    throw new Error('Distância inválida');
+  }
+  if (distanciaKm <= 3) {
+    return 5;
+  }
+  return 5 + (distanciaKm - 3) * 1.5;
+}
